@@ -1,0 +1,764 @@
+@font-face {
+  font-family: 'gotham-black';
+  src: url('./fonts/Gotham-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham-bold';
+  src: url('fonts/Gotham-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham-light';
+  src: url('fonts/Gotham-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham-book';
+  src: url('fonts/GothamBook.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham-medium';
+  src: url('fonts/GothamMedium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'gotham-book', sans-serif;
+  color: #524F5E;
+}
+
+a {
+  font-family: 'gotham-black';
+  color: #EB0029;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.hero {
+  background-image: url('img/hero-fondo-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 77px 15px 80px;
+  position: relative;
+  background-color: #524F5E;
+}
+
+.hero-encabezado {
+  font-size: 32px;
+  line-height: 30px;
+  font-family: 'gotham-bold',sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-encabezado span {
+  display: block;
+}
+
+.hero-encabezado span:last-child {
+  font-size: 48px;
+  line-height: 40px;
+}
+
+.texto-rojo {
+  color: #ea0029;
+}
+
+.texto-verde {
+  color: #009751;
+}
+
+.bloque-info {
+  padding: 84px 0 94px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.bloque-info__descripcion {
+  margin-bottom: 30px;
+}
+
+.bloque-info b,
+.bloque-info strong {
+  color: #FF671B;
+  font-family: 'gotham-bold';
+  display: block;
+}
+
+.bloque-info .frase-destacada {
+  font-family: 'gotham-bold';
+  margin-bottom: 47px;
+}
+
+.items-iconos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-icono {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  margin-bottom: 45px;
+  align-items: center;
+}
+
+.item-icono__img {
+  display: flex;
+  width: 140px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.item-icono img {
+  max-height: 100px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.item-icono__descripcion {
+  font-size: 25px;
+  line-height: 30px;
+  max-width: 250px;
+}
+
+.bloque-info .informacion-adicional {
+  font-family: 'gotham-light';
+  font-size: 25px;
+  line-height: 30px;
+  color: #9D9D9C;
+  padding-top: 3px;
+}
+
+.bloque-instrucciones {
+  padding: 57px 0 40px;
+  color: #e0e0e0;
+  background: linear-gradient(90deg, rgba(17, 17, 17, 1) 0%, rgba(22, 22, 22, 1) 5.7%, rgba(39, 39, 39, 1) 29.71%, rgba(45, 45, 45, 1) 47.7%, rgba(40, 40, 40, 1) 67.09%, rgba(25, 25, 25, 1) 90.63%, rgba(17, 17, 17, 1) 100%);
+}
+
+.encabezado-memorama-futbolero {
+  font-family: 'gotham-medium';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 5px;
+  margin-bottom: 11px;
+}
+
+.encabezado-memorama-futbolero.encabezado-chico {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+}
+
+.encabezado-memorama-futbolero span {
+  font-family: 'gotham-bold';
+  font-size: 35px;
+  line-height: 50px;
+  letter-spacing: 8px;
+}
+
+.encabezado-memorama-futbolero.encabezado-chico span {
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 6px;
+}
+
+.separador {
+  text-align: center;
+}
+
+.separador img {
+  margin: 0 25px;
+}
+
+.separador.separador-chico img {
+  max-height: 8px;
+  width: auto;
+  margin: 0 10px;
+}
+
+.separador::after,
+.separador::before {
+  content: '';
+  width: 95px;
+  height: 2px;
+  background-color: #E0E0E0;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  top: -3px;
+}
+
+.separador.separador-chico::after,
+.separador.separador-chico::before {
+  content: '';
+  width: 50px;
+  height: 1px;
+  border-radius: 1px;
+  top: -3px;
+}
+
+.items-instrucciones {
+  padding-top: 48px;
+}
+
+.item-instruccion {
+  max-width: calc(100% - 100px);
+  width: 100%;
+  position: relative;
+  margin: 0 auto 30px;
+}
+
+.item-instruccion__contenido {
+  display: flex;
+  font-family: 'gotham-book';
+  font-size: 20px;
+  line-height: 25px;
+  width: 100%;
+  border: 3px solid #119F52;
+  border-radius: 19px;
+  border-left: 3px solid transparent;
+  height: 100%;
+  align-items: center;
+  padding: 25px 30px 24px 40px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 175px;
+}
+
+.item-instruccion__img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25px;
+}
+
+.item-instruccion__img img {
+  max-height: 50px;
+  width: auto;
+}
+
+.item-instruccion:not(:last-child)::after {
+  content: '';
+  width: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 30px;
+  background-color: #119F52;
+  bottom: -30px;
+}
+
+.item-instruccion__contenido::before,
+.item-instruccion__contenido::after {
+  content: '';
+  background-image: url('img/borde-edge.svg');
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: -4px;
+  position: absolute;
+  left: -3px;
+}
+
+.item-instruccion__contenido::after {
+  top: auto;
+  bottom: -4px;
+  transform: scaleY(-1);
+}
+
+.item-instruccion b,
+.item-instruccion strong {
+  font-family: 'gotham-medium';
+  font-weight: normal;
+}
+
+.bloque-ranking {
+  background-image: url('img/fondo-bloque-ranking-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #e0e0e0;
+  padding: 160px 0 80px;
+}
+
+.bloque-ranking__encabezado {
+  font-family: 'gotham-bold';
+  text-align: center;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  font-size: 33px;
+  line-height: 40px;
+  letter-spacing: 9px;
+  margin-bottom: 15px;
+}
+
+.bloque-ranking__contenido {
+  background-color: #191919;
+  border-radius: 28px;
+  padding: 50px 15px 40px;
+  position: relative;
+}
+
+.bloque-ranking__contenido * {
+  position: relative;
+}
+
+.bloque-ranking__contenido::before {
+  content: '';
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #191919;
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('img/img-balon.png');
+  background-position: center 15px;
+  background-repeat: no-repeat;
+  background-size: 180px;
+}
+
+.bloque-ranking .informacion-adicional {
+  font-family: 'gotham-medium';
+  text-align: center;
+  font-size: 21px;
+  line-height: 25px;
+  padding-top: 35px;
+  color: #e0e0e0;
+}
+
+.tabla-ranking {
+  font-size: 10px;
+  line-height: 16px;
+  width: 100%;
+}
+
+.tabla-ranking thead tr {
+  border-bottom: 2px solid #f2f2f2;
+  border-radius: 2px;
+}
+
+.tabla-ranking tbody tr {
+  border-bottom: 1px solid #f2f2f2;
+  border-radius: 1px;
+}
+
+.tabla-ranking th,
+.tabla-ranking td {
+  padding: 15px 5px 14px;
+}
+
+.tabla-ranking .icono {
+  width: 30px;
+  height: 25px;
+  margin: 0 auto 10px;
+}
+
+.tabla-ranking .icono + span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.tabla-ranking tbody td:first-child {
+  padding-left: 25px;
+}
+
+.tabla-ranking th:nth-child(3) .icono + span,
+.tabla-ranking td:nth-child(3) .icono + span {
+  text-align: center;
+}
+
+.tabla-ranking .active {
+  background-color: #E0E0E0;
+  color: #524F5E;
+}
+
+.tabla-ranking tbody tr:nth-child(-n+3) {
+  color: #FF671B;
+}
+
+.tabla-ranking tbody tr:nth-child(-n+3) td:first-child::before {
+  content: '';
+  background-image: url('img/icono-medalla.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 11px;
+  width: 20px;
+  height: 42px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.tabla-ranking tbody tr:nth-child(-n+3) svg path {
+  fill: #FF671B;
+}
+
+.tabla-ranking .active svg path {
+  fill: #524F5E;
+}
+
+.boton-rojo {
+  font-family: 'gotham-bold';
+  background-color: #EB0029;
+  border: 2px solid #EB0029;
+  color: #fff;
+  padding: 10px 75px;
+  border-radius: 5px;
+  font-size: 32px;
+  line-height: 38px;
+  transition: 0.5s;
+}
+
+.boton-rojo:hover {
+  background-color: rgba(0,0,0,0);
+  border-color: #EB0029;
+}
+
+/* Tablet  sm */
+@media (min-width: 576px) {
+  .hero-encabezado {
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 50px;
+  }
+
+  .hero-encabezado span:last-child {
+    font-size: 60px;
+    line-height: 45px;
+  }
+
+  .item-instruccion {
+    max-width: 310px;
+    margin: 0 auto 30px;
+  }
+
+  .item-instruccion__img {
+    width: 110px;
+    height: 110px;
+    left: -55px;
+  }
+  
+  .item-instruccion__img img {
+    max-height: 110px;
+  }
+
+  .item-instruccion__contenido {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 25px 30px 24px 75px;
+    margin: 0 auto;
+  }
+
+  .encabezado-memorama-futbolero {
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 7px;
+    margin-bottom: 11px;
+  }
+
+  .encabezado-memorama-futbolero span {
+    font-size: 45px;
+    line-height: 54px;
+    letter-spacing: 11px;
+  }
+
+  .tabla-ranking {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .tabla-ranking th,
+  .tabla-ranking td {
+    padding: 15px 15px 14px;
+  }
+
+  .tabla-ranking tbody td:first-child {
+    padding-left: 50px;
+  }
+
+  .tabla-ranking tbody tr:nth-child(-n+3) td:first-child::before {
+    width: 30px;
+    height: 42px;
+    background-size: 20px;
+    top: 12px;
+    left: 10px;
+  }
+
+  .tabla-ranking .celda-icono {
+    display: flex;
+  }
+
+  .tabla-ranking .icono {
+    width: 35px;
+    height: 30px;
+    margin: 0;
+  }
+
+  .tabla-ranking .icono + span {
+    padding: 0 15px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .hero {
+    padding: 134px 80px 127px;
+  }
+
+  .bloque-info {
+    padding: 61px 0 79px;
+  }
+
+  .bloque-info__descripcion {
+    margin-bottom: 30px;
+  }
+
+  .bloque-info .frase-destacada {
+    margin-bottom: 75px;
+  }
+
+  .bloque-info .informacion-adicional {
+    padding-top: 8px;
+  }
+
+  .item-icono {
+    max-width: 33.33%;
+    margin-bottom: 30px;
+  }
+
+  .item-icono__img {
+    margin-bottom: 28px;
+  }
+
+  .bloque-instrucciones {
+    padding: 44px 0 75px;
+  }
+
+  .items-instrucciones {
+    padding-top: 56px;
+  }
+
+  .bloque-ranking {
+    padding: 280px 0 80px;
+  }
+
+  .bloque-ranking__contenido {
+    padding: 60px 20px 20px;
+  }
+
+  .bloque-ranking__contenido::before {
+    width: 280px;
+    height: 280px;
+    top: -140px;
+    background-position: center 20px;
+    background-size: 250px;
+  }
+
+  .bloque-ranking__encabezado {
+    font-size: 38px;
+    letter-spacing: 11px;
+  }
+
+  .bloque-ranking .informacion-adicional {
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 35px;
+  }
+
+  .tabla-ranking {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .tabla-ranking th,
+  .tabla-ranking td {
+    padding: 15px 20px 14px;
+  }
+
+  .tabla-ranking tbody td:first-child {
+    padding-left: 80px;
+  }
+
+  .tabla-ranking tbody tr:nth-child(-n+3) td:first-child::before {
+    background-size: 30px;
+    top: 8px;
+    left: 20px;
+  }
+
+  .boton-rojo {
+    padding: 5px 35px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .hero {
+    background-image: url('img/hero-fondo.jpg');
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-encabezado {
+    width: 60%;
+    flex-shrink: 0;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 0;
+  }
+
+  .hero-encabezado span:not(.texto-rojo) {
+    display: inline-block;
+  }
+
+  .hero-encabezado span:last-child {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .hero-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    right: 30px;
+  }
+
+  .hero-img img {
+    max-height: 370px;
+    width: auto;
+  }
+
+  .bloque-info {
+    padding: 61px 0 79px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .bloque-info b,
+  .bloque-info strong {
+    display: inline-block;
+  }
+
+  .bloque-ranking {
+    background-image: url('img/fondo-bloque-ranking.jpg');
+  }
+
+  .bloque-ranking__contenido {
+    padding: 60px 40px 20px;
+  }
+
+  .tabla-ranking {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .encabezado-memorama-futbolero {
+    font-size: 45px;
+    line-height: 54px;
+    letter-spacing: 9px;
+    margin-bottom: 11px;
+  }
+  
+  .encabezado-memorama-futbolero span {
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 13px;
+  }
+}
+
+/* Desktop XL */
+@media (min-width: 1200px) {
+  .hero-encabezado {
+    font-size: 65px;
+    line-height: 80px;
+  }
+
+  .hero-encabezado span:last-child {
+    font-size: 65px;
+    line-height: 80px;
+  }
+
+  .items-instrucciones {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 56px;
+  }
+
+  .item-instruccion {
+    max-width: 33.33%;
+    margin-bottom: 30px;
+  }
+
+  .item-instruccion__contenido {
+    max-width: calc(100% - 120px);
+  }
+
+  .item-instruccion:not(:nth-child(3n))::after {
+    content: '';
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    background-color: #119F52;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    right: 0;
+    left: auto;
+    bottom: auto;
+  }
+
+  .tabla-ranking {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
